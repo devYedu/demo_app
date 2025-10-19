@@ -461,7 +461,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   checkValidName(name: string) {
     const part2Typewriter = this.typewriters.toArray()[0]; // first <h1>
     this.checkValidNameCounter = this.checkValidNameCounter + 1;
-    if (name === "koch") {
+    if (name.toLocaleLowerCase() === "koch") {
       part2Typewriter.write('ahm...ippo okey ❤️', 100, 1000);
       part2Typewriter.write('❤️🫂', 100, 1000);
       this.checkValidNameCounter = 20;
